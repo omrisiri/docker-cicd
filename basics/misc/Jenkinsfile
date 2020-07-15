@@ -22,6 +22,7 @@ node {
      sh label: '', script: '''docker rm docker_test
       docker run --rm -tid --name docker_test -p 3000 omrisiri/docker-nodejs-demo:latest
       docker kill docker_test
+      docker rm docker_test
       
       '''
      }
