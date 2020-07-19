@@ -1,4 +1,4 @@
-node {
+node('docker-builders') {
    def commit_id
    stage('Preparation') {
      checkout scm
